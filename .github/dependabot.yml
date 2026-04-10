@@ -8,3 +8,7 @@ updates:
     directory: "/"
     schedule:
       interval: "weekly"
+  - package-ecosystem: "swift"
+    directory: "/ios/swift_metrics_bridge"
+    schedule:
+      interval: "weekly"
