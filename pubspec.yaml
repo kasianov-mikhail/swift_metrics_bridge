@@ -1,0 +1,31 @@
+name: swift_metrics_bridge
+description: Flutter bridge to Apple's swift-metrics. Provides counters, floating-point counters, and timers via platform channels to iOS swift-metrics instances.
+version: 0.1.0
+repository: https://github.com/kasianov-mikhail/swift_metrics_bridge
+topics:
+  - metrics
+  - swift-metrics
+  - ios
+
+environment:
+  sdk: ^3.11.4
+  flutter: '>=3.3.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  plugin_platform_interface: ^2.1.8
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  plugin:
+    platforms:
+      android:
+        package: dev.kasianov.swift_metrics_bridge
+        pluginClass: SwiftMetricsBridgePlugin
+      ios:
+        pluginClass: SwiftMetricsBridgePlugin
