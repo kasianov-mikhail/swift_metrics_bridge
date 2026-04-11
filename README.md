@@ -1,6 +1,6 @@
 <div align="center">
 
-# Swift Metrics Bridge
+# 📈 Swift Metrics Bridge
 
 **Flutter bridge to Apple's [swift-metrics](https://github.com/apple/swift-metrics)**
 
@@ -17,14 +17,14 @@ Counter · FloatingPointCounter · Timer
 > [!NOTE]
 > iOS only.
 
-## Installation
+## 📦 Installation
 
 ```yaml
 dependencies:
   swift_metrics_bridge: ^0.1.0
 ```
 
-## Usage
+## 🚀 Usage
 
 ```dart
 import 'package:swift_metrics_bridge/swift_metrics_bridge.dart';
@@ -44,6 +44,6 @@ await timer.record(Duration(milliseconds: 250));
 await timer.recordNanoseconds(1500);
 ```
 
-## How It Works
+## ⚙️ How It Works
 
 Each metric instance maps to a corresponding swift-metrics type on iOS via method channels. By default, swift-metrics uses a no-op backend — configure a backend like [Scout](https://github.com/kasianov-mikhail/scout) on the iOS side to persist metrics.
